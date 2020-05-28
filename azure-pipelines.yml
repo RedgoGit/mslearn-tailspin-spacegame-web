@@ -69,8 +69,8 @@ steps:
   inputs:
     codeCoverageTool: 'cobertura'
     summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
-    
-    - task: DotNetCoreCLI@2
+
+- task: DotNetCoreCLI@2
   displayName: "Run unit tests - $(buildConfiguration)"
   inputs:
     command: 'test'
